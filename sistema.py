@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #Desenvolvedor: Leonardo Alves de Melo - leonardo.alves.melo.1995@gmail.com
-#GER - Grupo de Estudos em Robotica
+#LMCAD - Unicamp
 
 from funcoes import *
 
@@ -29,7 +29,6 @@ while True:
 		if pessoa:
 			erro = 0
 			da_boas_vindas(pessoa)
-			registra_entrada(pessoa)
 			abre_porta()
 		else:
 			erro += 1

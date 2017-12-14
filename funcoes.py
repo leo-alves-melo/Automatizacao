@@ -11,16 +11,9 @@ relay.dir(mraa.DIR_OUT) #Define que o pino do relay eh output
 
 pasta_padrao = '/etc/init.d/' #Diretorio em que se encontra os scripts e dados do sistema
 
-registro_de_entradas = pasta_padrao + 'registro_de_entradas.csv' #Nome do arquivo que armazena o resgistro de entradas
 arquivo_senhas = pasta_padrao + 'senhas.csv' #Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
 
 ####################### FUNCOES #########################
-
-#Registra o nome da pessoa que acabou de entrar, junto com o tempo atual da entrada
-def registra_entrada(nome):
-	with open(registro_de_entradas, 'a') as arq:
-		entradasCsv = csv.writer(arq)
-		entradasCsv.writerow([nome,str(datetime.now())])
 
 #Abre a porta do laboratorio
 def abre_porta():
